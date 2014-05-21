@@ -51,7 +51,7 @@ Template.Canvas.rendered = function() {
       kineticImage = {};
       kineticImageObj = new Image();
       kineticImageObj.src = doc.url;
-      $('body').append(kineticImageObj);
+      //$('body').append(kineticImageObj);
       kineticImageObj.onload = function() {
         console.log('here mum Im loading');
         kineticImage[doc._id] = new Kinetic.Image({
