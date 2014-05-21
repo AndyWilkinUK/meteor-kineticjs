@@ -1,0 +1,1 @@
+Pictures = new Meteor.Collection('pictures');
