@@ -54,6 +54,7 @@ Template.Canvas.rendered = function() {
       //console.log(doc.url);
       //console.log(imageObj.src + ' hello');
       imageObj.src = doc.url;
+      $('#container').append(imageObj);
       imageObj.onload = function() {
       darth = new Kinetic.Image({
         x: doc.x,
@@ -81,6 +82,7 @@ Template.Canvas.rendered = function() {
             $set: newXY
           });
         });
+
 
       layer.draw();
       };
